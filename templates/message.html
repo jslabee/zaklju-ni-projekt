@@ -1,0 +1,17 @@
+{% extends "hello.html" %}
+{% block title %}<title>Message</title>{% endblock title %}
+{% block specifika %}
+<h1>Pošlji sporočilo</h1>
+<div class="container-fluid">
+    <form method="post" action="/rezultat">
+ <div class="form-group">
+        Prejemnik:<input name="prejemnik"class="form-control" placeholder="Text input">
+
+<textarea name ="vnos" class="form-control" rows="3"></textarea>
+
+ </div>
+
+        <button>OK</button>
+            </form>
+ </div>
+{% endblock specifika %}

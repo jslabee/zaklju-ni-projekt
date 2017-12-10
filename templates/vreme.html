@@ -1,0 +1,12 @@
+{% extends "hello.html" %}
+{% block title %}<title>Vreme</title>{% endblock title %}
+{% block specifika %}
+<h1>vreme</h1>
+<div class="container-fluid">
+<div class="well"><p>{{ podatki.weather[0].description }}</p>
+<p>{{ podatki.main.temp }}</p></div>
+</div>
+
+{% endblock specifika %}
+
+

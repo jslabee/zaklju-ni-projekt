@@ -1,0 +1,10 @@
+{% extends "hello.html" %}
+{% block title %}<title>Vstopna</title>{% endblock title %}
+{% block specifika %}
+
+
+
+    <h1>Hello,  {{ user.nickname() }}!</h1>
+<p><a href="{{ logout_url }}">Odjava</a></p>
+{% endblock specifika %}
+
